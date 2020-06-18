@@ -1,0 +1,15 @@
+biomassmotionstyle = ConvNonlin Diffusion 2D
+numDiffPerStep = 1
+numRunThreads = 10
+growthDiffRate = 0
+timeStep = 0.1
+deathRate = 0.0 
+spaceWidth = 1.0
+maxSpaceBiomass = 1000000
+minSpaceBiomass = 1.0e-9
+allowCellOverlap = true
+toroidalWorld = false 
+showCycleTime = true 
+showCycleCount = true
+defaultdiffconst = 1.0E-5
+

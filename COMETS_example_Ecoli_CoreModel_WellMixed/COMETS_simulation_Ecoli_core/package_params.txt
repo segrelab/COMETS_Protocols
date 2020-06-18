@@ -1,0 +1,13 @@
+numDiffPerStep = 10
+numRunThreads = 1
+exchangestyle = Monod Style
+defaultVmax = 18.5
+defaultKm = 0.000015
+defaultHill = 1
+timeStep = 0.01
+deathRate = 0.0
+spaceWidth = 1.0
+maxSpaceBiomass = 10
+minSpaceBiomass = 1e-11 
+showCycleTime = true 
+showCycleCount = true

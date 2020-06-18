@@ -1,0 +1,2 @@
+LayoutFileName: C:\Users\dukovski\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Ecoli_CoreModel_WellMixed\COMETS_simulation_Ecoli_core\Ecoli_batch_layout.txt
+ModelFileName: C:\Users\dukovski\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Ecoli_CoreModel_WellMixed\COMETS_simulation_Ecoli_core\e_coli_core.txt
