@@ -1,0 +1,26 @@
+maxCycles = 20000
+pauseonstep = false	
+pixelScale = 5	
+saveslideshow = true	
+slideshowExt = png	
+slideshowColorRelative = true
+slideshowRate = 1000
+slideshowLayer = 20
+slideshowName = ./images/image
+writeFluxLog = false
+FluxLogName = ./flux.txt
+FluxLogRate = 10000
+writeMediaLog = false
+MediaLogName = ./media.txt
+MediaLogRate = 10000
+writeBiomassLog = false
+BiomassLogName = ./biomass.txt
+BiomassLogRate = 1000
+writeTotalBiomassLog = true
+totalBiomassLogRate = 1
+TotalbiomassLogName = ./total_biomass.txt
+useLogNameTimeStamp = false
+writeVelocityLog = false
+VelocityLogName = ./velocity.txt
+VelocityLogRate = 100
+
