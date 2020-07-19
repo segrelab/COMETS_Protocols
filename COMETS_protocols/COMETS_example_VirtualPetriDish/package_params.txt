@@ -1,0 +1,19 @@
+numDiffPerStep = 10
+numRunThreads = 10
+growthDiffRate = 0
+flowDiffRate = 3e-10
+exchangestyle = Monod Style
+defaultKm = 0.01
+defaultHill = 1
+timeStep = 0.005
+deathRate = 0.0
+spaceWidth = 0.02
+maxSpaceBiomass = 10.0
+minSpaceBiomass = 1e-10
+allowCellOverlap = true
+toroidalWorld = false
+showCycleTime = true
+showCycleCount = true
+defaultVmax = 10
+biomassmotionstyle = Convection 2D
+
