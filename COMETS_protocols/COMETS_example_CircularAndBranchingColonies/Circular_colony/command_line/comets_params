@@ -1,0 +1,4 @@
+#!/bin/bash
+VERSION=comets_2.2.2
+
+java -classpath  /usr/local/share/java/glpk-java.jar:/fs/home04/segrelab/local/comets/$VERSION/gurobi560/linux64/lib/gurobi.jar:/fs/home04/segrelab/local/comets/$VERSION/jogl/jogamp-all-platforms/jar/jogl-all.jar:/fs/home04/segrelab/local/comets/$VERSION/jogl/jogamp-all-platforms/jar/gluegen-rt.jar:/fs/home04/segrelab/local/comets/$VERSION/jogl/jogamp-all-platforms/jar/gluegen.jar:/fs/home04/segrelab/local/comets/$VERSION/jogl/jogamp-all-platforms/jar/gluegen-rt-natives-linux-amd64.jar:/fs/home04/segrelab/local/comets/$VERSION/jogl/jogamp-all-platforms/jar/jogl-all-natives-linux-amd64.jar:/fs/home04/segrelab/local/comets/$VERSION/$VERSION.jar -Djava.library.path=/usr/local/lib/jni:/fs/home04/segrelab/local/comets/$VERSION/gurobi560/linux64/lib  edu.bu.segrelab.comets.Comets -loader edu.bu.segrelab.comets.fba.FBACometsLoader  -params global_params.txt -pkgparams package_params.txt

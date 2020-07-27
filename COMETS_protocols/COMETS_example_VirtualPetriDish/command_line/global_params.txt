@@ -1,0 +1,24 @@
+MaxCycles = 15000
+pixelScale = 5    
+saveslideshow = true    
+slideshowExt = png    
+slideshowColorRelative = true
+slideshowColorValue = .05
+slideshowRate = 200
+slideshowLayer = 20
+slideshowName = images/image
+writeFluxLog = true
+FluxLogName = flux.m
+FluxLogRate = 200
+writeMediaLog = true
+MediaLogName = media.m
+MediaLogRate = 200
+writeBiomassLog = true
+BiomassLogName = biomass.m
+BiomassLogRate = 200
+writeTotalBiomassLog = true
+totalBiomassLogRate = 1
+TotalbiomassLogName = totalbiomass.txt
+useLogNameTimeStamp = false
+
+

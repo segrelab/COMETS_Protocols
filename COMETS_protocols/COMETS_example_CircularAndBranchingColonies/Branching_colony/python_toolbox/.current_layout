@@ -1,0 +1,11 @@
+model_file /home/jeremy/Dropbox/work_related/harcombe_lab/segre/COMETS_Protocols/COMETS_protocols/COMETS_example_CircularAndBranchingColonies/Branching_colony/python_toolbox/toy.cmd 
+  model_world
+    grid_size 30 30
+    world_media
+      carbon 1.0
+    //
+  //
+  initial_pop
+    15 15 1.0
+  //
+//
