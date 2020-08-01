@@ -32,11 +32,25 @@ layout.params.fluxLogName = 'fluxLog.m';
 
 layout.params.maxSpaceBiomass = 1e3;
 layout.params.timeStep = 0.01;
-layout.params.maxCycles = 2400;
+layout.params.maxCycles = 1200;
 layout.params.deathRate = 0.1;
 
-% runCometsOnDirectory(cometsDirectory)
+% Prepare metabolic models
+for m = 1:length(modelNames)
+    modelCurr = models.(modelNames{m});
+    minMedMets = find(ismember(modelCurr.mets,minMed));
+    for i = 1:length(minMedMets)
+        modelCurr.lb(intersect(find(findExcRxns(modelCurr)),find(modelCurr.S(minMedMets(i),:)))) = -1000; % Allow unlimited uptake of nonlimiting nutrients
+    end
+    limitingMets = find(ismember(modelCurr.mets,nutrients));
+    for i = 1:length(limitingMets)
+        modelCurr.lb(intersect(find(findExcRxns(modelCurr)),find(modelCurr.S(limitingMets(i),:)))) = -10; % Allow limited uptake of limiting nutrients
+    end
+    models.(modelNames{m}) = modelCurr;
+end
 
+% runCometsOnDirectory(cometsDirectory)
+%%
 biomassLogRaw = parseBiomassLog([cometsDirectory '/' layout.params.biomassLogName]);
 biomassLog = zeros(size(biomassLogRaw,1)/length(modelNames),length(modelNames));
 for i = 1:length(modelNames)
@@ -55,11 +69,16 @@ end
 
 close all
 figure
-plot([1:layout.params.maxCycles+1]*layout.params.timeStep,biomassLog,'LineWidth',4)
+plotColors = parula(length(modelNames));
+for m = 1:length(modelNames)
+    plot([1:layout.params.maxCycles+1]*layout.params.timeStep,biomassLog(:,m),'LineWidth',4,'Color',plotColors(m,:))
+    hold on
+end
 set(gca,'FontSize',16)
 ylabel('Biomass (gDW)')
 xlabel('Time (h)')
 legend(modelNamesFormatted)
+xlim([0,12])
 
 allMetsFromModels = layout.mets;
 COMETSCycles = layout.params.maxCycles;
@@ -72,11 +91,6 @@ mediaLogMetOrder = zeros(length(allMetsFromModels),1);
 for i = 1:length(allMetsFromModels)
     mediaLogMetOrder(i) = find(ismember(mediaLogRaw.metname(1:length(allMetsFromModels)),allMetsFromModels(i)));
 end
-
-startMedia = mediaLogRaw.amt(find(mediaLogRaw.t == 0));
-startMedia = startMedia(mediaLogMetOrder);
-endpointMedia = mediaLogRaw.amt(find(mediaLogRaw.t == COMETSCycles));
-endpointMedia = endpointMedia(mediaLogMetOrder);
 
 for i = 1:COMETSCycles
     currentMedia = mediaLogRaw.amt(find(mediaLogRaw.t == i));
@@ -98,11 +112,11 @@ legend(nutrientNames)
 
 nonzeroSecMetIndices = find(sum(secMets,2));
 
-selectSecMets = {'ac[e]','ala-L[e]','for[e]'};
+selectSecMets = {'ac[e]','for[e]'};
 selectSecMetIndices = intersect(find(ismember(allMetsFromModels,selectSecMets)),nonzeroSecMetIndices);
 
 figure
-plot([1:layout.params.maxCycles]*layout.params.timeStep,mediaLogMat(selectSecMetIndices,:)','LineWidth',4)
+plot([1:layout.params.maxCycles]*layout.params.timeStep,smoothdata(mediaLogMat(selectSecMetIndices,:)'),'LineWidth',4)
 set(gca,'FontSize',16)
 ylabel('Metabolite Amount (mmol)')
 xlabel('Time (h)')
