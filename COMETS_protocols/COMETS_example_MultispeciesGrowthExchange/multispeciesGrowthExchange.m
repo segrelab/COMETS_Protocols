@@ -128,4 +128,4 @@ end
 set(gca,'FontSize',16)
 ylabel('Metabolite Amount (mmol)')
 xlabel('Time (h)')
-legend(selectSecMets)
+legend({'Acetate','Formate'})
