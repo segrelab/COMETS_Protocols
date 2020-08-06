@@ -49,8 +49,8 @@ for m = 1:length(modelNames)
     models.(modelNames{m}) = modelCurr;
 end
 
-% runCometsOnDirectory(cometsDirectory)
-%%
+runComets(layout)
+
 biomassLogRaw = parseBiomassLog([cometsDirectory '/' layout.params.biomassLogName]);
 biomassLog = zeros(size(biomassLogRaw,1)/length(modelNames),length(modelNames));
 for i = 1:length(modelNames)
