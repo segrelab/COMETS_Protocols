@@ -125,7 +125,7 @@ for s = 1:length(selectSecMets)
     plot([1:layout.params.maxCycles]*layout.params.timeStep,smoothdata(mediaLogMat(selectSecMetIndices(s),:)'),'LineWidth',4,'Color',plotColors2(s,:))
     hold on
 end
-set(gca,'FontSize',22.5)
+set(gca,'FontSize',16)
 ylabel('Metabolite Amount (mmol)')
 xlabel('Time (h)')
 legend(selectSecMets)
