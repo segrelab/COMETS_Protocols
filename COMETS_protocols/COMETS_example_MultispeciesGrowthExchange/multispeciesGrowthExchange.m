@@ -1,3 +1,5 @@
+%% Load files and prepare COMETS layout
+
 load modelsCommunity.mat
 
 layout = CometsLayout();
@@ -35,7 +37,7 @@ layout.params.timeStep = 0.01;
 layout.params.maxCycles = 1200;
 layout.params.deathRate = 0.1;
 
-% Prepare metabolic models
+%% Prepare metabolic models
 for m = 1:length(modelNames)
     modelCurr = models.(modelNames{m});
     minMedMets = find(ismember(modelCurr.mets,minMed));
@@ -49,8 +51,10 @@ for m = 1:length(modelNames)
     models.(modelNames{m}) = modelCurr;
 end
 
-runComets(layout)
+%% Run COMETS
+runComets(layout,cometsDirectory)
 
+%% Analyze biomass and media logs
 biomassLogRaw = parseBiomassLog([cometsDirectory '/' layout.params.biomassLogName]);
 biomassLog = zeros(size(biomassLogRaw,1)/length(modelNames),length(modelNames));
 for i = 1:length(modelNames)
