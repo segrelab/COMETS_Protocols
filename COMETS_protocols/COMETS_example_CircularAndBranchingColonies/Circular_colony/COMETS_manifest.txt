@@ -1,0 +1,8 @@
+ModelFileName: tiny_model.mod
+ModelFileName: tiny_model.txt
+ModelFileName: tiny_model.txt
+TotalBiomassFileName: ./total_biomass.txt
+ModelFileName: tiny_model.txt
+TotalBiomassFileName: ./total_biomass.txt
+ModelFileName: tiny_model.txt
+TotalBiomassFileName: ./total_biomass.txt
