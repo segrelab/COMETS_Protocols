@@ -1,0 +1,2 @@
+LayoutFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_CircularAndBranchingColonies\Branching_colony\layout.txt
+ModelFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_CircularAndBranchingColonies\Branching_colony\tiny_model.txt
