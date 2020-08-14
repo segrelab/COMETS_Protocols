@@ -13,6 +13,7 @@ biomass_plot = plot(timeStep*total_biomass(:,1),total_biomass(:,2)/volume)
 set(gca,'FontName','Helvetica');
 set(gca,'FontSize',15);
 set(biomass_plot,'LineWidth',2);
-xlabel 'Time [h]'
-ylabel 'Biomass density [g/l]'
+xlabel 'Time (h)'
+ylabel 'Biomass density (g/l)'
 print('Ecoli_core_batch_biomass','-dpng')
+set(gcf,'PaperPosition',[1.3333 3.3125 5.8333 4.3750])

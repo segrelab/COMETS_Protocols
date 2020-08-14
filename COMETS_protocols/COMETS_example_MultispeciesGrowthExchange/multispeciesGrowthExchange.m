@@ -1,5 +1,3 @@
-%% Load files and prepare COMETS layout
-
 load modelsCommunity.mat
 
 layout = CometsLayout();
@@ -37,7 +35,7 @@ layout.params.timeStep = 0.01;
 layout.params.maxCycles = 1200;
 layout.params.deathRate = 0.1;
 
-%% Prepare metabolic models
+% Prepare metabolic models
 for m = 1:length(modelNames)
     modelCurr = models.(modelNames{m});
     minMedMets = find(ismember(modelCurr.mets,minMed));
@@ -51,10 +49,8 @@ for m = 1:length(modelNames)
     models.(modelNames{m}) = modelCurr;
 end
 
-%% Run COMETS
-runComets(layout,cometsDirectory)
-
-%% Analyze biomass and media logs
+% runCometsOnDirectory(cometsDirectory)
+%%
 biomassLogRaw = parseBiomassLog([cometsDirectory '/' layout.params.biomassLogName]);
 biomassLog = zeros(size(biomassLogRaw,1)/length(modelNames),length(modelNames));
 for i = 1:length(modelNames)
@@ -120,12 +116,9 @@ selectSecMets = {'ac[e]','for[e]'};
 selectSecMetIndices = intersect(find(ismember(allMetsFromModels,selectSecMets)),nonzeroSecMetIndices);
 
 figure
-plotColors2 = winter(2);
-for s = 1:length(selectSecMets)
-    plot([1:layout.params.maxCycles]*layout.params.timeStep,smoothdata(mediaLogMat(selectSecMetIndices(s),:)'),'LineWidth',4,'Color',plotColors2(s,:))
-    hold on
-end
+plot([1:layout.params.maxCycles]*layout.params.timeStep,smoothdata(mediaLogMat(selectSecMetIndices,:)'),'LineWidth',4)
 set(gca,'FontSize',16)
 ylabel('Metabolite Amount (mmol)')
 xlabel('Time (h)')
-legend({'Acetate','Formate'})
+legend(selectSecMets)
+
