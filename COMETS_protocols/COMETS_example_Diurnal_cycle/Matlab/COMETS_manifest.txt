@@ -1,0 +1,30 @@
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\snorres\Dropbox\Methods Paper Materials\COMETS_Examples\COMETS_example_diurnal_cycle/mediaLog.m
+BiomassFileName: C:\Users\snorres\Dropbox\Methods Paper Materials\COMETS_Examples\COMETS_example_diurnal_cycle/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\snorres\Dropbox\Methods Paper Materials\COMETS_Examples\COMETS_example_diurnal_cycle/mediaLog.m
+BiomassFileName: C:\Users\snorres\Dropbox\Methods Paper Materials\COMETS_Examples\COMETS_example_diurnal_cycle/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
+ModelFileName: iSO595v6mat.txt
+MediaFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/mediaLog.m
+BiomassFileName: C:\Users\ilija\Dropbox (BOSTON UNIVERSITY)\Methods Paper Materials\COMETS_Examples\COMETS_example_Diurnal_Cycle\Matlab/biomassLog.m
