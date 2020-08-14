@@ -1,0 +1,267 @@
+	parameters
+	activateRate = 0.001
+	allowCellOverlap = true
+	deathRate = 0
+	maxCycles = 25
+	maxSpaceBiomass = 0.00022
+	minSpaceBiomass = 1e-13
+	pauseOnStep = false
+	randomOrder = true
+	spaceWidth = 0.01
+	simulateActivation = false
+	timeStep = 0.00027778
+	toroidalWorld = false
+	randomSeed = 0
+	allowFluxWithoutGrowth = true
+	colorRelative = true
+	displayLayer = 0
+	pixelScale = 5
+	showCycleTime = true
+	showCycleCount = true
+	saveslideshow = false
+	slideshowColorRelative = true
+	slideshowExt = png
+	slideshowLayer = 0
+	slideshowName = ./res.png
+	slideshowRate = 1
+	biomassMotionStyle = Diffusion (Crank-Nicolson)
+	exchangeStyle = Monod Style
+	flowDiffRate = 0
+	growthDiffRate = 0
+	numDiffPerStep = 10
+	numRunThreads = 1
+	defaultAlpha = 1
+	defaultHill = 2
+	defaultKm = 0.01
+	defaultVmax = 10
+	defaultW = 10
+	numExRxnSubsteps = 10
+	batchDilution = false
+	dilFactor = 0.01
+	dilTime = 24
+	cellSize = 1e-09
+	evolution = false
+	mutRate = 1e-09
+	addRate = 1e-05
+	costlyGenome = false
+	geneFractionalCost = 5e-08
+	writeFluxLog = false
+	fluxLogName = ./flux.m
+	fluxLogRate = 1
+	fluxLogFormat = COMETS
+	writeMediaLog = true
+	mediaLogName = ./media.m
+	mediaLogRate = 1
+	mediaLogFormat = Matlab
+	writeBiomassLog = false
+	biomassLogName = ./biomass.m
+	biomassLogRate = 1
+	biomassLogFormat = Matlab
+	writeTotalBiomassLog = false
+	totalBiomassLogRate = 1
+	totalBiomassLogName = ./total_biomass.m
+	useLogNameTimeStamp = false
+	writeMatFile = false
+	MatFileName = ./comets_log.mat
+//
+model_file iMM904.txt
+	model_world
+		grid_size 1 1
+		world_media
+		13BDglcn_e 0
+		2hb_e 0
+		2mbac_e 0
+		2mbald_e 0
+		2mbtoh_e 0
+		2mppal_e 0
+		2phetoh_e 0
+		3c3hmp_e 0
+		3mbald_e 0
+		3mop_e 0
+		4abut_e 0
+		4abz_e 0
+		5aop_e 0
+		8aonn_e 0
+		A 1
+		B 2
+		C 0
+		E 0.1
+		Nbfortyr_e 0
+		P 0
+		S 1
+		abt_e 0
+		ac_e 0
+		acald_e 0
+		aces_e 0
+		ade_e 0
+		adn_e 0
+		akg_e 0
+		ala__L_e 0
+		alltn_e 0
+		alltt_e 0
+		amet_e 0
+		arab__D_e 0
+		arab__L_e 0
+		arg__L_e 0
+		asn__L_e 0
+		asp__L_e 0
+		btd_RR_e 0
+		btn_e 0
+		chol_e 0
+		cit_e 0
+		co2_e 0
+		crn_e 0
+		csn_e 0
+		cys__L_e 0
+		cytd_e 0
+		dad_2_e 0
+		dann_e 0
+		dca_e 0
+		dcyt_e 0
+		ddca_e 0
+		dgsn_e 0
+		din_e 0
+		dttp_e 0
+		duri_e 0
+		epist_e 0
+		epistest_SC_e 0
+		ergst_e 0
+		ergstest_SC_e 0
+		etha_e 0
+		etoh_e 0
+		fe2_e 0
+		fecost_e 0
+		fecostest_SC_e 0
+		fmn_e 0
+		for_e 0
+		fru_e 0
+		fum_e 0
+		g3pc_e 0
+		g3pi_e 0
+		gal_e 0
+		galur_e 0
+		gam6p_e 0
+		gcald_e 0
+		glc__D_e 0
+		gln__L_e 0
+		glu__L_e 0
+		glx_e 0
+		gly_e 0
+		glyc_e 0
+		gsn_e 0
+		gthox_e 0
+		gthrd_e 0
+		gua_e 0
+		h2o_e 0
+		h_e 0
+		hdca_e 0
+		hdcea_e 0
+		hexc_e 0
+		his__L_e 0
+		hxan_e 0
+		iamac_e 0
+		iamoh_e 0
+		ibutac_e 0
+		ibutoh_e 0
+		id3acald_e 0
+		ile__L_e 0
+		ind3eth_e 0
+		inost_e 0
+		ins_e 0
+		k_e 0
+		lac__D_e 0
+		lac__L_e 0
+		lanost_e 0
+		lanostest_SC_e 0
+		leu__L_e 0
+		lys__L_e 0
+		mal__L_e 0
+		malt_e 0
+		man_e 0
+		melib_e 0
+		met__L_e 0
+		mmet_e 0
+		na1_e 0
+		nac_e 0
+		nadp_e 0
+		nh4_e 0
+		nmn_e 0
+		o2_e 0
+		oaa_e 0
+		ocdca_e 0
+		ocdcea_e 0
+		ocdcya_e 0
+		orn_e 0
+		pacald_e 0
+		pap_e 0
+		pc_SC_e 0
+		pectin_e 0
+		pepd_e 0
+		phe__L_e 0
+		pheac_e 0
+		pi_e 0
+		pnto__R_e 0
+		pro__L_e 0
+		ptd1ino_SC_e 0
+		ptrc_e 0
+		pyr_e 0
+		rib__D_e 0
+		ribflv_e 0
+		sbt__D_e 0
+		sbt__L_e 0
+		ser__L_e 0
+		so3_e 0
+		so4_e 0
+		spmd_e 0
+		sprm_e 0
+		srb__L_e 0
+		succ_e 0
+		sucr_e 0
+		taur_e 0
+		thm_e 0
+		thmmp_e 0
+		thmpp_e 0
+		thr__L_e 0
+		thym_e 0
+		thymd_e 0
+		tre_e 0
+		trp__L_e 0
+		ttdca_e 0
+		tyr__L_e 0
+		ura_e 0
+		urea_e 0
+		uri_e 0
+		val__L_e 0
+		xan_e 0
+		xtsn_e 0
+		xyl__D_e 0
+		xylt_e 0
+		zymst_e 0
+		zymstest_SC_e 0
+	//
+	diffusion_constants 1.000000e-06
+	//
+	media
+	//
+	media_refresh 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	//
+	static_media 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	//
+	barrier
+	//
+	//
+//
+initial_pop
+	0 0 1.000000e-06
+//
+reactions
+	reactants
+		1 15 1 2.000000e-01
+		1 16 1 2.000000e-01
+		2 21 2.500000e-01
+	enzymes
+		2 18 2
+	products
+		1 17 1
+		2 20 1
+//
