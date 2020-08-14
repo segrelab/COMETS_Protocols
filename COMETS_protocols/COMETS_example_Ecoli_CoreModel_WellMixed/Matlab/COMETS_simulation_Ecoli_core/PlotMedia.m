@@ -22,9 +22,6 @@ maxCycles = 1000;
 %Number of wmedia write steps
 total_write_steps = maxCycles/mediaLogRate;
 
-%Line styles for the plot
-lines_vec = {'-', '--', ':', '-.'};
-
 for j=1:length(metabolites_to_plot)
     for i=0:total_write_steps
         varname=genvarname(['media_',num2str(i*mediaLogRate)]);
@@ -35,7 +32,7 @@ for j=1:length(metabolites_to_plot)
         metabolite_density(i+1,metabolites_to_plot(j))=metabolite/volume;
         time(i+1)=timeStep*mediaLogRate*i;
     end
-        metabolites_plot=plot(time,metabolite_density(:,metabolites_to_plot(j)),'LineStyle',lines_vec{j})
+        metabolites_plot=plot(time,metabolite_density(:,metabolites_to_plot(j)))
         set(metabolites_plot,'LineWidth',2);
         hold on
 end
@@ -43,7 +40,9 @@ end
 set(gca,'FontName','Helvetica');
 set(gca,'FontSize',15);
 
-xlabel 'Time [h]'
-ylabel 'Concentration [mM]'
+xlabel 'Time (h)'
+ylabel 'Concentration (mM)'
 legend(metabolites_names,'Location','northwest');
+set(gcf,'PaperPosition',[1.3333 3.3125 5.8333 4.3750])
 print('Ecoli_core_batch_metabolites','-dpng')
+exportgraphics(gca,'Ecoli_core_batch_metabolites.pdf')
