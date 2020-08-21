@@ -23,12 +23,15 @@ cometsDirectory = 'CometsRunDir';
 layout.params.writeBiomassLog = true;
 layout.params.biomassLogRate = 1;
 layout.params.biomassLogName = 'biomassLog';
+layput.params.biomassLogFormat = 'MATLAB';
 layout.params.writeMediaLog = true;
 layout.params.mediaLogRate = 1;
 layout.params.mediaLogName = 'mediaLog';
+layput.params.mediaLogFormat = 'MATLAB';
 layout.params.writeFluxLog = true;
 layout.params.fluxLogRate = 1;
 layout.params.fluxLogName = 'fluxLog.m';
+layput.params.fluxLogFormat = 'MATLAB';
 
 layout.params.maxSpaceBiomass = 1e3;
 layout.params.timeStep = 0.01;
