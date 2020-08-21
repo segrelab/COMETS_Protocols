@@ -22,11 +22,11 @@ cometsDirectory = 'CometsRunDir';
 
 layout.params.writeBiomassLog = true;
 layout.params.biomassLogRate = 1;
-layout.params.biomassLogName = 'biomassLog';
+layout.params.biomassLogName = 'biomassLog.m';
 layput.params.biomassLogFormat = 'MATLAB';
 layout.params.writeMediaLog = true;
 layout.params.mediaLogRate = 1;
-layout.params.mediaLogName = 'mediaLog';
+layout.params.mediaLogName = 'mediaLog.m';
 layput.params.mediaLogFormat = 'MATLAB';
 layout.params.writeFluxLog = true;
 layout.params.fluxLogRate = 1;
@@ -35,7 +35,7 @@ layput.params.fluxLogFormat = 'MATLAB';
 
 layout.params.maxSpaceBiomass = 1e3;
 layout.params.timeStep = 0.01;
-layout.params.maxCycles = 1200;
+layout.params.maxCycles = 10;
 layout.params.deathRate = 0.1;
 
 % Prepare metabolic models
@@ -52,7 +52,7 @@ for m = 1:length(modelNames)
     models.(modelNames{m}) = modelCurr;
 end
 
-% runCometsOnDirectory(cometsDirectory)
+runComets(layout, cometsDirectory)
 %%
 biomassLogRaw = parseBiomassLog([cometsDirectory '/' layout.params.biomassLogName]);
 biomassLog = zeros(size(biomassLogRaw,1)/length(modelNames),length(modelNames));
