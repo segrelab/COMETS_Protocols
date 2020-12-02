@@ -1,0 +1,5 @@
+#!/bin/bash -l 
+module load gurobi/9.0.0
+./comets_scr comets_script 
+
+
