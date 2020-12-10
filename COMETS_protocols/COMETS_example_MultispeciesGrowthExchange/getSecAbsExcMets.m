@@ -32,7 +32,7 @@ for f = 1:length(fluxes)
     
     if ~isempty(fluxes{f})
     
-    fluxesCurr = fluxes{f}{1}{1}; % Get only the fluxes at a certain timepoint
+    fluxesCurr = fluxes{f}{1}{1}; % Get only the fluxes at the current timepoint
 
     for m = 1:length(modelNames)
 
