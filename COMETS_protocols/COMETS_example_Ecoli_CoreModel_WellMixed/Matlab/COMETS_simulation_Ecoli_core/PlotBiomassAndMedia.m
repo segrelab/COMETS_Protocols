@@ -13,6 +13,7 @@ subplot(1,2,1)
 %Plot the biomass density (in g/l) as a function of time (in hours) 
 biomass_plot = plot(timeStep*total_biomass(:,1),total_biomass(:,2)/volume)
 
+set(gca,'box','off')
 set(gca,'FontName','Helvetica');
 set(gca,'FontSize',15);
 set(biomass_plot,'LineWidth',2);
@@ -20,6 +21,7 @@ xlabel 'Time (h)'
 ylabel 'Biomass density (g/l)'
 print('Ecoli_core_batch_biomass','-dpng')
 set(gcf,'PaperPosition',[1.3333 3.3125 5.8333 4.3750])
+
 
 %Load the media output
 %It contains the metabolite names in the string array media_names
@@ -62,6 +64,7 @@ for j=1:length(metabolites_to_plot)
         hold on
 end
 
+set(gca,'box','off')
 set(gca,'FontName','Helvetica');
 set(gca,'FontSize',15);
 
@@ -71,4 +74,4 @@ legend(metabolites_names,'Location','northwest');
 set(gcf,'PaperPosition',[1.3333 3.3125 5.8333 4.3750])
 set(gcf,'Position',[100 100 1500 513])
 
-exportgraphics(gcf,'Ecoli_core_batch_biomass_metabolites.pdf','ContentType','vector')
+exportgraphics(gcf,'Ecoli_core_batch_biomass_metabolites.tif','ContentType','vector')
