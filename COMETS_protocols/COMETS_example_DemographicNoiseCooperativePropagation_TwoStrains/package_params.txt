@@ -14,5 +14,5 @@ showCycleCount = true
 defaultdiffconst = 6.0E-6
 exchangestyle = Monod Style
 defaultVmax = 18.5
-defaultKm = 0.00075
+defaultKm = 0.000015
 defaultHill = 1
