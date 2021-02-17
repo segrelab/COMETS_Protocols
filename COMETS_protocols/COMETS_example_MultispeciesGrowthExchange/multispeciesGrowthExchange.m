@@ -124,4 +124,3 @@ set(gca,'FontSize',16)
 ylabel('Metabolite Amount (mmol)')
 xlabel('Time (h)')
 legend(selectSecMets)
-
